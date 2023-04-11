@@ -1,0 +1,163 @@
+.bg1 {
+    background: url("images/bg1.jpg");
+    /* add the background image */
+    background-size: cover;
+    /*  make the image cover the whole div */
+    height: 50vh;
+    /* temporarily give the div some height  */
+    /* do not use pixel heights on divs- this is not responsive – instead add padding on the children as a  percentage*/
+}
+
+.navbar {
+    font-size: 0.875em;
+    /*since we have set the body font-size to 16px this can also be written as 1em, so if we want our navbar menu items to be smaller as per the design comp it needs to be less than 1em, the formula is 14(the size of the font in Figma)divided by 16 which equals 0.875em*/
+
+}
+
+.navbar-brand {
+    font-weight: bolder;
+    letter-spacing: -3px;
+
+}
+
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #FDA118;
+}
+
+.orange {
+    color: #FDA118;
+
+}
+
+.josh {
+    color: white;
+}
+
+.tag {
+    /*    float:right;  */
+    /* float the text to the right*/
+    display: flex;
+    justify-content: flex-end;
+    color: #ffff;
+    /* make the text white*/
+
+
+    margin-top: 140px;
+    /* the words are 140px away from the navbar in Figma*/
+    text-align: right;
+    padding-bottom: 10%;
+    /* use a percentage so that we have a variable padding at the bottom – the children within the div should control the height of divs*/
+    margin-right: 15%;
+
+}
+
+
+.tag h1 {
+    font-family: 'Raleway', sans-serif;
+    width: 341px;
+    /* give the H1 a width so that we wrap the text as per the design comp*/
+    font-size: 7.125em;
+    /* 114px font size in Figma divided by 16px= 7.125*/
+    letter-spacing: -10px;
+    /* fix the letter-spacing*/
+    font-weight: 800;
+    /* make the text bold*/
+    line-height: 75%;
+    /* decrease the line height*/
+}
+
+.aboutbg {
+    background-color: #d9dade;
+    padding: 2%;
+}
+
+.aboutbg h2 {
+    font-size: 2.4em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+}
+
+.particle {
+
+    text-align: right;
+    margin-right: 150px;
+    font-size: 1.8em;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 0px;
+    padding-bottom: 40px;
+}
+
+.about-text {
+
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 1.4em;
+    line-height: 2em;
+}
+
+.blocker {
+
+    width: 133px;
+    height: 10px;
+    background-color: purple;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.articlesbg {
+    background-color: #f5f5f5;
+}
+
+.article-title {
+    font-size: 1.4em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: #251341;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.date {
+    font-size: 0.8em;
+    margin-top: -5px;
+    font-weight: lighter;
+    font-style: italic;
+    text-align: left;
+}
+
+.article-p {
+    text-align: left;
+
+}
+
+.readmore {
+    display: block;
+    color: #a19ba6;
+    font-size: 0.9em;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.articlesbg h3 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+
+footer{
+    background-image:url("images/footerbg.jpg");
+    background-size:cover;
+    width:100%;
+background-position: center center;
+    
+}
+
+footer p{
+
+    color:#f5f5f5;
+    font-weight: bold;
+    padding:5%;
+}

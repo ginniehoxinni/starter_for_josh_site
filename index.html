@@ -7,16 +7,20 @@
 <meta name="Description" content="starter for josh site">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css" />
 <title>Title</title>
 </head>
 <body>
 
-    <header class="container-fluid">
+    <header class="container-fluid bg1">
       <!-- div for the main image the stretches to the edge of the page- -->
-      <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <nav class="navbar navbar-expand-md navbar-dark">
         <!-- Brand -->
-        <a class="navbar-brand" href="#">JOSH WHITKIN</a>
+        <a class="navbar-brand" href="#"><span class="josh">JOSH</span><span class="orange">WHITKIN</span></a>
 
         <!-- Toggler/collapsibe Button -->
         <button
@@ -46,13 +50,14 @@
         </div>
       </nav>
       <div class="container">
-        <!-- div that holds the content in the middle of the page-->
-        <h1>Games Design For the future</h1>
-        <!--  the main tag line-->
+        <div class="tag"><!-- div that holds the content in the middle of the page-->
+          <h1 > Games Design For the Future </h1><!--  the main tag line-->
+      </div>
+
       </div>
       <!-- container-->
     </header>
-    <section class="container-fluid">
+    <section class="container-fluid aboutbg text-center">
       <div class="container">
         <h2>GAMES &amp; LEVEL DESIGNER</h2>
         <p class="particle">and particle wizard</p>
@@ -65,7 +70,7 @@
           designing for puzzle games, 2D platformers or 3D environments. I
           always tell a story.
         </p>
-
+        <div class="blocker"></div>
       </div>
       <!-- container-->
     </section>
@@ -78,6 +83,7 @@
         <div class="row">
           <!--  a row that gives us access to the BS columns-->
           <div class="col-md-4">
+            <img class="img-fluid" alt="portait" src="images/port1.jpg">
             <h4>A PORTRAIT</h4>
             <p>12 December 2020</p>
             <p>
@@ -91,6 +97,7 @@
             <a href="#">CONTINUE READING</a>
           </div>
           <div class="col-md-4">
+            <img class="img-fluid" alt="A MODEL" src="images/port2.jpg">
             <h4>A MODEL</h4>
             <p>12 December 2020</p>
             <p>
@@ -104,6 +111,7 @@
             <a href="#">CONTINUE READING</a>
           </div>
           <div class="col-md-4">
+            <img class="img-fluid" alt="A GAMES DESIGN" src="images/port3.jpg">
             <h4>A GAMES DESIGN</h4>
             <p>12 December 2020</p>
             <p>
@@ -131,7 +139,7 @@
         <div class="row">
           <!-- a row that gives us access to the BS columns-->
           <div class="col-md-6">
-            <p>JOSH WHITKIN</p>
+            <p> <a class="navbar-brand" href="#"><span class="josh">JOSH</span> <span class="orange">WHITKIN</span></a></p>
           </div>
           <div class="col-md-6">
             <p>Terms and Conditions</p>
