@@ -5,7 +5,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="starter for josh site">
+<meta name="description" content="<?php bloginfo('description'); ?>">
+<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico">
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,8 +34,7 @@
                  echo ' - page '. $paged; }
            ?>
 </title>
-<meta name="description" content="<?php bloginfo('description'); ?>">
-<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico">
+
 </head>
 <body>
     <header class="container-fluid small_herobg">
@@ -48,7 +48,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
       
-               <?php 
+        <?php 
 
 wp_nav_menu( array(
   'theme_location'  => 'primary',
