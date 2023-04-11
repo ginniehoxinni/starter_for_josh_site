@@ -1,10 +1,18 @@
+/*   
+Theme Name: Josh's Wordpress Site
+Theme URI: http://joshwhitkin.com
+Description: A style-free theme to get you started on an HTML5-based Wordpress theme of your own.
+Author: Me
+Author URI: http://joshwhitkin.com
+Version: 1
+*/ 
+
 .bg1 {
     background: url("images/bg1.jpg");
     /* add the background image */
     background-size: cover;
     /*  make the image cover the whole div */
-    height: 50vh;
-    /* temporarily give the div some height  */
+
     /* do not use pixel heights on divs- this is not responsive – instead add padding on the children as a  percentage*/
 }
 
