@@ -5,7 +5,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="starter for josh site">
 <meta name="description" content="<?php bloginfo('description'); ?>">
 <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico">
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
@@ -15,7 +14,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet"> 
 <!-- <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="responsive.css" /> -->
-<title>   <?php
+<title>
+    <?php
               if (function_exists('is_tag') && is_tag()) {
                  single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
               elseif (is_archive()) {
@@ -37,18 +37,18 @@
 
 </head>
 <body>
-    <header class="container-fluid bg1">   <!-- div for the main image the stretches to the edge of the page- -->
+    <header class="container-fluid smallpage-bg">
         <div class="container">
     <nav class="navbar navbar-expand-md  navbar-dark">
         <!-- Brand -->
         <a class="navbar-brand" href="#"><span class="josh">JOSH</span><span class="orange">WHITKIN</span></a>
       
-      <!-- Toggler/collapsibe Button -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+        <!-- Toggler/collapsible Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       
-        <?php 
+               <?php 
 
 wp_nav_menu( array(
   'theme_location'  => 'primary',
@@ -62,16 +62,13 @@ wp_nav_menu( array(
 ) );
 
 ?>
-
-
       </nav> 
    
-        <div class="tag"><!-- div that holds the content in the middle of the page-->
-                  <h1 > Games Design For the Future </h1><!--  the main tag line-->
+        <div class="smallpage-tag"><!-- div that holds the content in the middle of the page-->
+                  <h1 class="smallpage-title">Games Design For the Future </h1><!--  the main tag line-->
   </div>            
 </div><!-- container-->
 
 <!-- very important that this is added-->
 <?php wp_head(); ?> 
-
 </header>
