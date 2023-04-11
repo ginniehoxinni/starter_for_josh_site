@@ -47,20 +47,21 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-              <?php 
+      
+                <?php 
 
-wp_nav_menu( array(
-  'theme_location'  => 'primary',
-  'depth'           => 2, // 1 = no dropdowns, 2 = with dropdowns.
-  'container'       => 'div',
-  'container_class' => 'collapse navbar-collapse',
-  'container_id'    => 'bs-example-navbar-collapse-1',
-  'menu_class'      => 'navbar-nav ml-auto',
-  'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-  'walker'          => new WP_Bootstrap_Navwalker(),
-) );
+        wp_nav_menu( array(
+        'theme_location'  => 'primary',
+        'depth'           => 2, // 1 = no dropdowns, 2 = with dropdowns.
+        'container'       => 'div',
+        'container_class' => 'collapse navbar-collapse',
+        'container_id'    => 'bs-example-navbar-collapse-1',
+        'menu_class'      => 'navbar-nav ml-auto',
+        'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+        'walker'          => new WP_Bootstrap_Navwalker(),
+        ) );
 
-?>
+        ?>
       </nav> 
    
         <div class="tag"><!-- div that holds the content in the middle of the page-->
