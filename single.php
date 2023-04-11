@@ -1,29 +1,33 @@
 <?php require_once('small_header.php'); ?>
+
 <div class="container-fluid maincontainer">
-    <div class="container">
-        <div class="row">
-            <section class="maintext">
-
-<article class="excerpts"> <!--we can reuse the css on the old article to restyle the new dynamic posts-->
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                    
-    <div <?php post_class(); ?>>
-
-        <div class="postcontent">
-            <?php /*?><?php the_post_thumbnail(array(150,150), array ('class' => 'alignright')); ?><?php */?>
-            <?php the_content(); ?>
-        </div><!--postcomtet-->
-                        
-        <div class="content-band">
-            <span class="postmeta-category"><?php the_category(', '); ?></span>
-            <span class="postmeta-comments"><?php comments_popup_link('0 Comments', '1 Comment', '% Comments'); ?></span>
+    
+  <div class="container">
+  <h1><?php wp_title(''); ?></h1>
+    <div class="row">
+      <section class="maintext">
+       
+        <article class="excerpts"> <!--we can reuse the css on the old article to restyle the new dynamic posts-->
+          <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+          <div <?php post_class(); ?>>
+            <div class="postcontent">
+              <?php /*?><?php the_post_thumbnail(array(150,150), array ('class' => 'alignright')); ?><?php */?>
+              <?php the_content(); ?>
+            </div>
+            <!--postcomtet-->
             
-        </div><!--content-band-->
-    </div><!--post class-->
-    <div class="related-template">
-    <h3>RELATED POSTS</h3>
-    <ul class="rel-list">
-        <?php
+            <div class="content-band"> <span class="postmeta-category">
+              <?php the_category(', '); ?>
+              </span> <span class="postmeta-comments">
+              <?php comments_popup_link('0 Comments', '1 Comment', '% Comments'); ?>
+              </span> </div>
+            <!--content-band--> 
+          </div>
+          <!--post class-->
+          <div class="related-template">
+            <h3>RELATED POSTS</h3>
+            <ul class="rel-list">
+              <?php
         $backup = $post; //Backup current post object
         $current = $post->ID;  //get current post id 
                                 
@@ -42,43 +46,37 @@
         foreach ($myposts as $post) :
             setup_postdata($post);
             ?>
-        <li>
-            <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a>
-            <span class="related-posts-date"><?php the_time('F jS, Y'); ?></span>
-        </li>
-        <?php endforeach;
+              <li> <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" rel="bookmark">
+                <?php the_title(); ?>
+                </a> <span class="related-posts-date">
+                <?php the_time('F jS, Y'); ?>
+                </span> </li>
+              <?php endforeach;
                                 
         $post = $backup; //restore current post object
         wp_reset_query();
         ?>
-    </ul>
-</div>
-
-    
-    <div class="comments-template">
+            </ul>
+          </div>
+          <div class="comments-template">
             <?php comments_template(); ?>
-        </div>
-        
-    <?php endwhile; ?>
-    <?php else: ?>
-    <div class="post">
-        <p>Sorry, no posts found.</p>
-    </div><!--post-->
-    <?php endif; ?>
-</article>
-</section>
-
-            
-     </div>
+          </div>
+          <?php endwhile; ?>
+          <?php else: ?>
+          <div class="post">
+            <p>Sorry, no posts found.</p>
+          </div>
+          <!--post-->
+          <?php endif; ?>
+        </article>
+      </section>
     </div>
   </div>
+</div>
 <?php get_footer(); ?>
-
 </article>
 </section>
-
-            
-     </div>
-    </div>
+</div>
+</div>
   </div>
 <?php get_footer(); ?>

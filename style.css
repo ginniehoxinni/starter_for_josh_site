@@ -1,4 +1,4 @@
-/*   
+﻿/*   
 Theme Name: Josh's Wordpress Site
 Theme URI: http://joshwhitkin.com
 Description: A style-free theme to get you started on an HTML5-based Wordpress theme of your own.
@@ -11,7 +11,6 @@ Version: 1
     background: url("images/bg1.jpg");
     /* add the background image */
     background-size: cover;
-    /*  make the image cover the whole div */
 
 }
 
@@ -59,6 +58,7 @@ Version: 1
 
 }
 
+
 .tag h1 {
     font-family: 'Raleway', sans-serif;
     width: 341px;
@@ -96,6 +96,7 @@ Version: 1
 }
 
 .about-text {
+
     margin-left: 40px;
     margin-right: 40px;
     font-size: 1.4em;
@@ -152,57 +153,42 @@ Version: 1
     font-weight: bold;
 }
 
-footer {
-    background-image: url("images/footerbg.jpg");
-    background-size: cover;
-    width: 100%;
-    background-position: center center;
+footer{
+    background-image:url("images/footerbg.jpg");
+    background-size:cover;
+    width:100%;
+background-position: center center;
+    
 }
 
 footer p{
+
     color:#f5f5f5;
     font-weight: bold;
     padding:5%;
 }
-
-
 .smallpage-bg {
     width: 100%;
-    background: url("images/page_header_bg.jpg") no-repeat center center;
-    background-size: cover;/*make the background image cover the whole div proportionally*/
-    height: 40vh; /*Viewport Height (vh) — This unit is based on the height of the viewport. A value of 1vh is equal to 1% of the viewport height. */
+background: url("images/page_header_bg.jpg") no-repeat center center;
+background-size: cover;/*make the background image cover the whole div proportionally*/
+height: 40vh; /*Viewport Height (vh) — This unit is based on the height of the viewport. A value of 1vh is equal to 1% of the viewport height. */
 
 }
+
 
 .smallpage-title{ 
     font-size: 4em;
     color: white;
     font-weight: 800;
-    margin-top: 2%;
+    margin-top: 3%;
     padding-bottom: 5%;
-}
-
-.posttitle {
-    padding: 10px 0px;
-}
-
-@media only screen and (max-width: 768px) {
-    .navbar-collapse {
-        -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-        -ms-flex-positive: 1;
-        flex-grow: 1;
-        -ms-flex-align: center;
-        align-items: center;
-        display: flex;
-        justify-content: flex-end;
-    }
+ 
 }
 .small_herobg {
     width: 100%;
-    background: url("images/small_header_bg.jpg") no-repeat center center;
-    background-size: cover;/*make the background image cover the whole div proportionally*/
-    height: 40vh; /*Viewport Height (vh) — This unit is based on the height of the viewport. A value of 1vh is equal to 1% of the viewport height. */
+background: url("images/small_header_bg.jpg ") no-repeat center center;
+background-size: cover;/*make the background image cover the whole div proportionally*/
+height: 40vh; /*Viewport Height (vh) — This unit is based on the height of the viewport. A value of 1vh is equal to 1% of the viewport height. */
 
 }
 img.attachment-thumbnail.size-thumbnail.wp-post-image {
@@ -210,12 +196,4 @@ img.attachment-thumbnail.size-thumbnail.wp-post-image {
     float: left;
     margin-right: 10px;
     padding: 10px;
-}
-
-
-.maintext h3 {
-    font-size: 2.4em;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    padding: 10px 0px;
 }
